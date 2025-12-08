@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Aditya Padale — Portfolio</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- AOS for scroll animations -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<style>
+:root{
+  --bg: #0d1117;
+  --panel: #16181c;
+  --card: #1c1f26;
+  --muted: #b0b9c6; /* brighter for better contrast */
+  --accent: #0d6efd;
+  --glass: rgba(255,255,255,0.03);
+}
+
+html,body{height:100%;}
+
+body{
+  background: var(--bg);
+  color: #e6eef6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  scroll-behavior: smooth;
+}
+
+.navbar, footer{
+  background: var(--panel);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.text-accent{color: var(--accent);}
+
+.btn-accent{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover{
+  background:#0b5ed7;
+}
+
+.btn-outline-light {
+  color: #e6eef6;
+  border-color: #e6eef6;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #e6eef6;
+}
+
+.card .muted {
+  color: var(--muted);
+}
+
+.icon-circle{
+  width:100px;   /* resize box behind my image */
+  height:100px;   /* resize box behind my image */
+  border-radius:12px;
+  background:var(--glass);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+a.social{
+  color:#cfe3ff;
+}
+
+a.social:hover{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+/* Responsive tweaks */
+@media (max-width:576px){
+  .hero-img{display:none;}
+}
+
+/* small utility */
+.muted{color:var(--muted);}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Aditya Padale</a>
+    <div class="d-flex align-items-center gap-3">
+      <a class="social" href="https://github.com/AdityaPadale" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+      <a class="social" href="https://www.linkedin.com/in/aditya-padale-technical" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a class="social" href="https://medium.com/@adityapadale4" target="_blank" rel="noreferrer" aria-label="Medium"><i class="fab fa-medium fa-lg"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-7" data-aos="fade-right">
+      <h1 class="display-5 fw-bold">Aditya Padale</h1>
+      <p class="lead text-accent mb-3">AWS Cloud Enthusiast • DevOps Beginner</p>
+      <p class="muted">Passionate about exploring and leveraging AWS — focused on EC2, S3, and DevOps practices. I build tools, automate infra, and learn fast. Currently exploring automation, Linux & scalable cloud patterns.</p>
+      <div class="mt-4 d-flex gap-2 flex-wrap">
+        <a class="btn btn-accent" href="Aditya_Shashikant_Padale_Resume R2.pdf" download>
+          <i class="fa-solid fa-download me-2"></i> Download Resume Photo
+        </a>
+         <a class="btn btn-accent" href="Aditya_Shashikant_Padale_Resume_withoutphoto_new.pdf" download>
+          <i class="fa-solid fa-download me-2"></i> Download Resume Plain
+        </a>
+        <a class="btn btn-outline-light" href="https://mail.google.com/mail/?view=cm&to=adityapadale4@gmail.com" target="_blank" rel="noreferrer">
+          <i class="fa-solid fa-envelope me-2"></i> Email
+        </a>
+        <a class="btn btn-outline-light" href="tel:+918669812386">
+          <i class="fa-solid fa-phone me-2"></i> +91 86698 12386
+        </a>
+      </div>
+    </div>
+    <div class="col-md-5 text-center hero-img" data-aos="fade-left">
+      <div class="p-4 rounded-3" style="background:linear-gradient(180deg, rgba(13,110,253,0.15), rgba(13,110,253,0.05)); display:inline-block;">
+        <div class="icon-circle mb-3"><img src="adityap.jpg" alt="Profile" style=" width:124px; height:124px; border-radius:12px; background:var(--glass); display:flex; align-items:center; justify-content:center;"></div>
+        <div class="text-start">
+          <div class="fw-semibold">AWS + DevOps</div>
+          <div class="muted small">Pune / Satara — B.Tech (2021–2025)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container pb-5">
+
+  <!-- ABOUT -->
+  <section id="about" class="py-4" data-aos="fade-up">
+    <h3 class="text-accent">About Me</h3>
+    <p class="muted">I'm an aspiring cloud & DevOps engineer from Pune / Satara. I like automating repetitive tasks, building small tools with Python, and learning how cloud infra scales. I enjoy hands-on projects — from audio tools to quiz platforms.</p>
+  </section>
+
+  <!-- SKILLS & CERTS -->
+  <section class="row g-4 align-items-start" data-aos="fade-up">
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="mb-3">Skills</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>AWS (EC2, S3, IAM basics, Amazon VPC, NAT, ASG, Network Load Balancing)</li>
+          <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>DevOps basics (CI/CD, infra automation)(Beginner)</li>
+          <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Linux & Shell scripting</li>
+          <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i> Github, GIT</li>
+          <li class="mb-2"><i class="fa-solid fa-check text-accent me-2"></i>Python for scripts & tooling(Beginner)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h5 class="mb-3">Certifications</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><i class="fa-solid fa-certificate text-accent me-2"></i>AWS Fundamentals</li>
+           <li class="mb-2"><i class="fa-solid fa-certificate text-accent me-2"></i>AWS SaaS Tenant</li>
+          <li class="mb-2"><i class="fa-solid fa-certificate text-accent me-2"></i> Introduction To Amazon EC2</li>
+          <li class="mb-2"><i class="fa-solid fa-certificate text-accent me-2"></i>Red Hat Linux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="pt-5" data-aos="fade-up">
+    <h3 class="text-accent">Highlighted Projects</h3>
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2">Sound Amplifier software</h6>
+          <p class="muted small">Real-time audio amplifier built with Python and NumPy.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/Sound-Amplifier-software" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2"> 3-Tier Architecture</h6>
+          <p class="muted small"> A structured that separates an application into Presentation, Application, and Data layers — improving scalability, maintainability, and security.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/3-Tier-Architecture" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2"> S3 Event Notification System SNS</h6>
+          <p class="muted small"> S3-SNS Notification System is a lightweight AWS-based solution that automatically sends alerts whenever changes occur in an Amazon S3 bucket — such as file uploads, deletions, or updates.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/s3-event-notification-system-SNS" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2"> Static Website Hosting on S3</h6>
+          <p class="muted small"> Host a fast, secure, and cost-effective static website using Amazon S3. Store your HTML, CSS IN S3 bucket</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2">AWS VPC Setup — NAT Gateway with Three Private Subnets</h6>
+          <p class="muted small"> Creating a VPC with one public subnet (hosting a NAT Gateway) and three private subnets, allowing private instances to access the internet securely through the NAT Gateway.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/AWS-VPC-Setup---NAT-Gateway-with-Three-Private-Subnets" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2">Database from an EC2 instance to AWS RDS.</h6>
+          <p class="muted small"> migrating a MariaDB database from an EC2 instance to AWS RDS.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/database-from-an-EC2-instance-to-AWS-RDS" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2">AWS-DEVOPS</h6>
+          <p class="muted small">Collection of AWS & DevOps configs, examples and how-tos.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/AWS-DEVOPS" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100">
+          <h6 class="mb-2">KheloQuiz</h6>
+          <p class="muted small">AI-powered quiz platform (team project) — frontend prototype & docs.</p>
+          <a class="small text-accent" href="https://github.com/AdityaPadale/KheloQuiz" target="_blank" rel="noreferrer"><i class="fa-solid fa-up-right-from-square me-1"></i>View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="pt-5" data-aos="fade-up">
+    <h3 class="text-accent">Education</h3>
+    <div class="card p-3 mt-3">
+      <div class="fw-semibold">Dnyanshree Institute of Engineering and Technology Satara</div>
+      <div class="muted small">B.Tech — Computer Science and Engineering (2021–2025)</div>
+      <div class="muted small">CGPA- 7.1</div>
+       <div class="fw-semibold">Chh.Shahu Academy Satara</div>
+      <div class="muted small">HSC (Science)</div>
+      <div class="muted small">Percentage- 82%</div>
+       <div class="fw-semibold">Podar International School Satara</div>
+      <div class="muted small">CBSE</div>
+      <div class="muted small">Percentage- 72%</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="pt-5" data-aos="fade-up">
+    <h3 class="text-accent">Contact</h3>
+    <div class="card p-4 mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Email</strong><br>
+            <a href="https://mail.google.com/mail/?view=cm&to=adityapadale4@gmail.com" target="_blank" rel="noreferrer" class="text-accent">adityapadale4@gmail.com</a>
+          </p>
+          <p class="mb-1"><strong>Phone</strong><br>
+            <a href="tel:+918669812386" class="text-accent">+91 86698 12386</a>
+          </p>
+          <p class="mb-0 muted"><strong>Location</strong><br>Pune / Satara, Maharashtra, India</p>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
+          <div>
+            <a class="btn btn-accent me-2" href="Aditya_Shashikant_Padale_Resume R2.pdf" download><i class="fa-solid fa-file-arrow-down me-2"></i>Download Resume</a>
+            <a class="btn btn-outline-light" href="https://github.com/AdityaPadale" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="py-4 text-center muted">
+  <div class="container">
+    <small>2025 Aditya Padale. All Rights Reserved.</small>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({duration:600, once:true});
+</script>
+
+</body>
+</html>
